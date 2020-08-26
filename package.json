@@ -21,5 +21,9 @@
                 "path": "./themes/Classic Terminal-color-theme.json"
             }
         ]
+    },
+    "dependencies": {
+        "ovsx": "0.1.0-next.bcce4bc",
+        "vsce": "^1.79.3"
     }
 }
