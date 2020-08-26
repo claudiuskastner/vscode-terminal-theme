@@ -9,6 +9,10 @@
     "categories": [
         "Themes"
     ],
+    "publisher": "Claudius",
+    "repository": {
+        "url": "https://github.com/claudiuskastner/vscode-terminal-theme"
+    },
     "contributes": {
         "themes": [
             {
