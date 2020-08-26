@@ -2,7 +2,7 @@
     "name": "classic-terminal",
     "displayName": "classic-terminal",
     "description": "Dark terminal theme.",
-    "version": "v0.0.5",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.48.0"
     },
