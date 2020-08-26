@@ -13,7 +13,7 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - run: npm install vsce
+    - run: npm install vsce -g
     - run: vsce package
     - uses: Klemensas/action-autotag@stable
       id: update_tag
