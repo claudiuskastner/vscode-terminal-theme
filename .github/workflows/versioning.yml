@@ -13,13 +13,14 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - run: npm install
+    - run: npm install vsce
     - run: vsce package
     - uses: Klemensas/action-autotag@stable
       id: update_tag
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         tag_prefix: "v"
+
     - name: Create Release
       if: steps.update_tag.outputs.tagname
       uses: actions/create-release@v1
@@ -29,6 +30,7 @@ jobs:
       with:
         tag_name: ${{ steps.update_tag.outputs.tagname }}
         release_name: Release ${{ steps.update_tag.outputs.tagname }}
+
     - name: Upload Release Asset
       if: steps.update_tag.outputs.tagname
       id: upload-release-asset
