@@ -14,6 +14,7 @@ jobs:
       with:
         node-version: '12.x'
     - run: npm install vsce -g
+    - run: npm install
     - run: vsce package
     - uses: Klemensas/action-autotag@stable
       id: update_tag
