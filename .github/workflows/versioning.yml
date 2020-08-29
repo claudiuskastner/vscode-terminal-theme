@@ -45,7 +45,7 @@ jobs:
         asset_content_type: application/vsix
   publish:
     runs-on: ubuntu-latest
-    if: steps.upload-release-asset
+    if: tag
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
