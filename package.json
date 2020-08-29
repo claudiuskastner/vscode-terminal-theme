@@ -9,7 +9,7 @@
     "categories": [
         "Themes"
     ],
-    "icon": "./res/icon.png",
+    "icon": "res/icon.png",
     "publisher": "Claudius",
     "repository": {
         "url": "https://github.com/claudiuskastner/vscode-terminal-theme",
