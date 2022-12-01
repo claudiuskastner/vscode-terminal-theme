@@ -28,7 +28,7 @@
         ]
     },
     "dependencies": {
-        "ovsx": "0.1.0-next.bcce4bc",
-        "vsce": "^1.79.3"
+        "ovsx": "0.6.0",
+        "vsce": "^2.14.0"
     }
 }
